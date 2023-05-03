@@ -1,154 +1,149 @@
-* {
-  box-sizing: border-box;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1b1b1b;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  margin: 0;
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #f2f2f2;
+a {
+  color: #fff;
+  text-decoration: none;
 }
+
+a:hover {
+  color: #f5c518;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
 
 header {
+  background-color: #212121;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  padding: 1rem;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
 }
 
 nav ul {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-nav ul li {
-  margin-right: 1rem;
+nav li {
+  margin-left: 20px;
 }
 
-nav ul li:last-child {
-  margin-right: 0;
+nav li:first-child {
+  margin-left: 0;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  padding: 0.5rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+nav a {
+  font-size: 18px;
 }
 
-nav ul li a:hover {
-  background-color: #333;
-  color: #fff;
-}
+/* Main Content Styles */
 
 main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  padding: 50px;
 }
 
-@media screen and (min-width: 768px) {
-  main {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.invest-analysis {
+  background-color: #424242;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1024px) {
-  main {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.invest-analysis h2 {
+  margin: 0;
+  font-size: 36px;
 }
 
-section {
-  background-color: #fff;
-  padding: 1rem;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.invest-analysis form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.invest-analysis p {
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .invest-analysis form label {
-  margin-bottom: 0.5rem;
+  font-size: 18px;
 }
 
-.invest-analysis form input[type="text"] {
-  padding: 0.5rem;
+.invest-analysis form input,
+.invest-analysis form select,
+.invest-analysis form checkbox {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-bottom: 1rem;
+  border: none;
 }
 
 .invest-analysis form input[type="submit"] {
-  background-color: #333;
-  color: #fff;
-  padding: 0.5rem;
-  border-radius: 5px;
-  border: none;
+  background-color: #f5c518;
+  color: #1b1b1b;
+  font-weight: bold;
   cursor: pointer;
 }
 
-.invest-analysis form input[type="submit"]:hover {
-  background-color: #666;
+.trending-stocks {
+  background-color: #424242;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.trending-stocks h2 {
+  margin: 0;
+  font-size: 36px;
 }
 
 .trending-stocks ul {
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trending-stocks li {
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.news {
+  background-color: #424242;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.news h2 {
   margin: 0;
-  padding: 0;
-}
-
-.trending-stocks ul li {
-  margin-bottom: 0.5rem;
-}
-
-.trending-stocks ul li a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s ease;
-}
-
-.trending-stocks ul li a:hover {
-  color: #666;
+  font-size: 36px;
 }
 
 .news ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-left: 20px;
 }
 
-.news ul li {
-  margin-bottom: 1rem;
+.news li {
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
-.news ul li a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s ease;
-}
-
-.news ul li a:hover {
-  color: #666;
-}
+/* Footer Styles */
 
 footer {
-  background-color: #333;
-  color: #fff;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 0.2rem
+  background-color: #212121;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
 }
