@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio Management</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Trending Stocks</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>Portfolio Management</h1>
+    </header>
+    <main>
+      <section class="invest-analysis">
+        <h2>Investment Analysis</h2>
+        <p>Enter the stock codes you wish to analyze:</p>
+        <form method="post" action="test.py">
+            <label for="stocks">Stock codes (separated by comma):</label>
+            <input type="text" id="stocks" name="stocks">
+            <br>
+            <label for="capital">Capital:</label>
+            <input type="number" name="capital" id="capital">
+            <br>
+            <label for="years-of-data">Years of data:</label>
+            <select name="years-of-data" id="years-of-data">
+            <option value="1">1 year</option>
+            <option value="2">2 years</option>
+            <option value="3">3 years</option>
+            <option value="4">4 years</option>
+            <option value="5">5 years</option>
+            </select>
+            <br>
+            <label for="short-sell-constraints">Short-sell constraints:</label>
+            <input type="checkbox" name="short-sell-constraints" id="short-sell-constraints">
+            <br>
+            <input type="submit" value="Analyze">
+        </form>
+      </section>
+      <section class="trending-stocks">
+        <h2>Trending Stocks</h2>
+        <ul>
+          <li><a href="#">AAPL</a></li>
+          <li><a href="#">AMZN</a></li>
+          <li><a href="#">GOOG</a></li>
+          <li><a href="#">MSFT</a></li>
+        </ul>
+      </section>
+      <section class="news">
+        <h2>News</h2>
+        <ul>
+          <li><a href="#">New Tech IPO Coming Soon</a></li>
+          <li><a href="#">Oil Prices Surge as Tensions Rise</a></li>
+          <li><a href="#">Federal Reserve Announces Interest Rate Hike</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Portfolio Management. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

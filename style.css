@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f2f2f2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+section {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.invest-analysis form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.invest-analysis form label {
+  margin-bottom: 0.5rem;
+}
+
+.invest-analysis form input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.invest-analysis form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.invest-analysis form input[type="submit"]:hover {
+  background-color: #666;
+}
+
+.trending-stocks ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.trending-stocks ul li {
+  margin-bottom: 0.5rem;
+}
+
+.trending-stocks ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.trending-stocks ul li a:hover {
+  color: #666;
+}
+
+.news ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news ul li {
+  margin-bottom: 1rem;
+}
+
+.news ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.news ul li a:hover {
+  color: #666;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.2rem
+}
